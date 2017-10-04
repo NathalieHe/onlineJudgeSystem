@@ -11,10 +11,10 @@ export class AuthService {
   userProfile = new BehaviorSubject<any>(undefined);
 
   auth0 = new auth0.WebAuth({
-    clientID: 'SLEAmYhSyq9CV0rBteDLGob32hu56X47',
-    domain: 'payson-cs503-1703.auth0.com',
+    clientID: 'JMoUtm-l6SYtYs77ZvLL3L4rBU1Bwoie',
+    domain: 'nathalie.auth0.com',
     responseType: 'token id_token',
-    audience: 'https://payson-cs503-1703.auth0.com/userinfo',
+    audience: 'https://nathalie.auth0.com/api/v2/',
     redirectUri: 'http://localhost:3000',
     scope: 'openid profile'
   });
