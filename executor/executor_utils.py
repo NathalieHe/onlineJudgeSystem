@@ -9,7 +9,7 @@ from docker.errors import ImageNotFound
 
 client = docker.from_env()
 IMAGE_NAME = 'nathaliehe/cs503_1703'
-CURRENT_DIR = os.path.dirname(os.path.relpath(__name__))
+CURRENT_DIR = os.path.dirname(os.path.relpath(__file__))
 TEMP_BUILD_DIR = '%s/tmp/' % CURRENT_DIR
 
 SOURCE_FILE_NAMES = {

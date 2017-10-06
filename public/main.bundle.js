@@ -670,10 +670,10 @@ var AuthService = (function () {
         this.router = router;
         this.userProfile = new __WEBPACK_IMPORTED_MODULE_4_rxjs_BehaviorSubject__["BehaviorSubject"](undefined);
         this.auth0 = new __WEBPACK_IMPORTED_MODULE_3_auth0_js__["WebAuth"]({
-            clientID: 'SLEAmYhSyq9CV0rBteDLGob32hu56X47',
-            domain: 'payson-cs503-1703.auth0.com',
+            clientID: 'JMoUtm-l6SYtYs77ZvLL3L4rBU1Bwoie',
+            domain: 'nathalie.auth0.com',
             responseType: 'token id_token',
-            audience: 'https://payson-cs503-1703.auth0.com/userinfo',
+            audience: 'https://nathalie.auth0.com/api/v2/',
             redirectUri: 'http://localhost:3000',
             scope: 'openid profile'
         });
