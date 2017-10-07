@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return 'hello the world'
-    
+
 @app.route('/build_and_run', methods=['POST'])
 def build_and_run():
     data = json.loads(request.data)
@@ -25,6 +25,7 @@ def build_and_run():
 
 if __name__ == '__main__':
     import sys
-    port = int(sys.argv[1])
+    #port = int(sys.argv[1])
     eu.load_image()
-    app.run(port=port)
+    #app.run(port=port)
+    app.run()
